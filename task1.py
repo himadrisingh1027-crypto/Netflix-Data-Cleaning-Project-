@@ -10,6 +10,9 @@ print("\nMissing Values:")
 print(df.isnull().sum())
 
 # Remove duplicate rows
+duplicates = df.duplicated().sum()
+print(f"\nDuplicate rows found: {duplicates}")
+
 df = df.drop_duplicates()
 
 # Fill missing values
