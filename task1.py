@@ -41,3 +41,6 @@ df.to_csv("cleaned_netflix_titles.csv", index=False)
 
 print("\nDataset cleaned successfully!")
 print("Saved as: cleaned_netflix_titles.csv")
+
+print("\nDataset Information:")
+print(df.info())
